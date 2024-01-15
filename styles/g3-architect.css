@@ -126,6 +126,83 @@ main {
     margin-bottom: 20px; 
 }
 
+/* future section styles  */
+.feature-content .section-title {
+    color: #131313;
+    font-size: 45px;
+    font-family: Open Sans;
+    font-weight: 700;
+    margin-left: 40px;
+    text-align: left;
+    padding-left: 13px;
+    border-left: 5px solid #FF900E;     
+}
+
+.feature-content .feature-section-paragraph {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.feature-card {
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card h4 {
+    color: #131313;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-left: 33px;
+}
+
+.feature-card .feature-description {
+    color: #727272;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-left: 33px;
+    padding-bottom: 35px;
+}
+
+.feature-image img {
+    height: 80%;
+    width: 70%;
+    margin-right: 90px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    width: 342px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 60px;
+    padding: 45px 10px;
+}
+
+.ten-years-badge h2 {
+    font-size: 65px;
+    margin: 0px;
+}
+
+.ten-years-badge p {
+    font-size: 18px;
+}
+
 /* facts section css here  */
 .facts-title {
     color: #131313;
@@ -171,23 +248,91 @@ main {
     margin-bottom: 10px;
 }
 
+/* sponsors section  */
+.section-title {
+    text-align: center;
+    margin-top: 100px;
+    color: #131313;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section-description {
+    margin-top: 23px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #727272;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+
+/* sponsors styles here  */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* responsive media queries  */
 /* mobile devices  */
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
     }
-    nav, .teams-container {
+    nav, .teams-container, .facts-card-container, .sponsors-img-container, .features {
         flex-direction: column;
     }
     .teams-img-container {
         grid-template-columns: 1fr;
         margin-left: 0px;
     }
+
+    .feature-content .section-title {
+        padding-left: 0px;
+        margin-left: 4px;
+    }
+
+    .feature-content .feature-section-paragraph {
+        margin-left: 4px;
+        padding-right: 70px;
+        text-align: left;
+    }
+
+    .feature-card {
+        padding-right: 40px;
+        margin-left: 0px;
+    }
+
+    .feature-img img {
+        width: 100%;
+    }
+
+    .ten-years-badge {
+        left: 5px;
+    }
+
     .teams-content {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
+    }
+    .facts-card-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+    .sponsors-img-container {
+        align-items: center;
+        gap: 30px;
+    }
+    .sponsors-img-container img {
+        width: 165px;
     }
 }
 
@@ -196,7 +341,7 @@ main {
     header {
         padding: 50px;
     }
-    nav, .teams-container {
+    nav, .teams-container, .sponsors-img-container {
         flex-direction: column;
     }
 }
